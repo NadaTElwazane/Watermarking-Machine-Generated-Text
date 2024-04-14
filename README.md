@@ -11,3 +11,11 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | 4. Merge Unwatermarked and Watermarked Datasets | [Merge](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Merge%20Datasets/create-merged-watermarked-and-unwatermarked-dataset.ipynb) <br> [Truncate](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Merge%20Datasets/create-truncated-watermarked-and-unwatermarked-dataset.ipynb) | [Merged](./Datasets/No%20Attacks/Merged/merged-watermarked-and-unwatermarked-text.csv) <br> [Truncated](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv) |
 | 6. Run the Detection Algorithm on the first 1200 rows of the Truncated Dataset | [Part1](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-1.ipynb) <br> [Part2](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-2.ipynb) <br> [Part3](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-3.ipynb) <br> [Merge](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Merge%20Datasets/create-merged-pvalue-scores-dataset.ipynb)| [Part1](./Datasets/No%20Attacks/Detection/p-value-label-part-1.csv) <br> [Part2](./Datasets/No%20Attacks/Detection/p-value-label-part-2.csv) <br> [Part3](./Datasets/No%20Attacks/Detection/p-value-label-part-3.csv) <br> [Merged](./Datasets/No%20Attacks/Merged/merged-p-value-label.csv) |
 | 7. Evaluate the Accuracy, Precision, Recall and F1-score  of the Detection Algorithm | [Notebook](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/evaluate-the-detection-algorithm.ipynb) | N/A |
+
+## **Simulating Attacks**
+### **1. Paraphrasing Attack**
+| Description | Notebooks | Datasets |
+| --- | --- | --- |
+|1. Experimented paraphrasing using Dipper | [Notebook](./Notebooks/Attacks/Paraphrasing%20Attack/Dipper/Dipper%20-%20v1.ipynb) | N/A |
+|2. Experimented paraphrasing using T5 on the [Watermarked Dataset](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv)| [Notebook]() | In progress |
+|3. Run the Detection Algorithm on the [Paraphrased Dataset]() | [Notebook]() | In progress |
