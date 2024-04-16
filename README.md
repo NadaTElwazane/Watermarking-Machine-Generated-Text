@@ -17,5 +17,5 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
 |1. Experimented paraphrasing using Dipper | [Notebook](./Notebooks/Attacks/Paraphrasing%20Attack/Dipper/Dipper%20-%20v1.ipynb) | N/A |
-|2. Experimented paraphrasing using T5 on the [Watermarked Dataset](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv)| [Notebook]() | In progress |
+|2. Experimented paraphrasing using T5 on the [Watermarked Dataset](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv)| [Notebook](./Notebooks/Attacks/Paraphrasing%20Attack/T5/t5-generated-text-and-paraphrased-only.ipynb) | [Dataset](./Datasets/Attacks/Paraphrasing%20attack/paraphased-text.csv) |
 |3. Run the Detection Algorithm on the [Paraphrased Dataset]() | [Notebook]() | In progress |
