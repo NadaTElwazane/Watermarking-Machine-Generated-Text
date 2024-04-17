@@ -20,3 +20,14 @@ This repository contains the code for our senior project "Watermarking Machine-G
 |2. Experimented paraphrasing using T5 on the [Watermarked Dataset](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv)| [Notebook](./Notebooks/Attacks/Paraphrasing%20Attack/T5/t5-generated-text-and-paraphrased-only.ipynb) | [Dataset](./Datasets/Attacks/Paraphrasing%20attack/paraphased-text.csv) |
 |3. Run the Detection Algorithm on the [Paraphrased Dataset](./Datasets/Attacks/Paraphrasing%20attack/paraphased-text.csv) | [Part1](./Notebooks/Attacks/Paraphrasing%20Attack/Detection/detection-paraphrased-part-1.ipynb) <br> [Part2](.) <br> [Part3](./) <br> [Merge](.)| [Part1](./Datasets/Attacks/Paraphrasing%20attack/Detection/paraphrasing_test_results-part%201.csv) <br> [Part2](.) <br> [Part3](.) <br> [Merged](.) |
 
+
+
+
+---
+## **Evaluating LLM With and Without Watermark**
+***EXPERIMENTAL***
+| Description | Notebooks | Datasets |
+| --- | --- | --- |
+|1. Evaluate OPT-350M (No Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [MCQ FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/opt-350m-mcq-hellaswag-v1.ipynb) <br> [Auto-Complete FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/opt-350m-autocomplete-hellaswag-v1.ipynb)<br>[Minimum Loss](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/hellaswag-eval-loss-v1.ipynb) | N/A |
+|***FAILED & ABANDONED*** Evaluate GEMMA-2B (No Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [MCQ and Auto-Complete FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/gemma-mcq-and-autocomplete-v1-FAIL.ipynb) | N/A |
+|2. Evaluate OPT-350M (With Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [Logits with Red-Green List (Minimum Loss) FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/opt350m-evaluating-a-watermark-for-llm-fail-v1.ipynb)| N/A |
