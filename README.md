@@ -28,7 +28,7 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
 | 1. Simulate Homoglyph Attack on the [Watermarked Dataset](./Datasets/No%20Attacks/Merged/truncated-watermarked-and-unwatermarked-text.csv)| [Notebook](./Notebooks/Attacks/Homoglyph%20Attack/homoglyph-attack-v1-2.ipynb) | [Dataset](./Datasets/Attacks/Homoglyph%20Attack/homoglyph_data_v2.csv) |
-| 2. Run the Detection Algorithm on the [Homoglyph Text](./Datasets/Attacks/Homoglyph%20Attack/homoglyph_data.csv) | [Part1](./Notebooks/Attacks/Homoglyph%20Attack/Detection/detection-homoglyph-part1.ipynb) <br> [Part2](.) <br> [Part3](.) <br> [Merge](.)| [Part1](./Datasets/Attacks/Homoglyph%20Attack/Detection/homoglyph_test_results_part1.csv) <br> [Part2](.) <br> [Part3](.) <br> [Merged](.) |
+| 2. Run the Detection Algorithm on the [Homoglyph Text](./Datasets/Attacks/Homoglyph%20Attack/homoglyph_data.csv) | [Part1](./Notebooks/Attacks/Homoglyph%20Attack/Detection/detection-homoglyph-part1.ipynb) <br> [Part2](./Notebooks/Attacks/Homoglyph%20Attack/Detection/detection-homoglyph-part2.ipynb) <br> [Part3](.) <br> [Merge](.)| [Part1](./Datasets/Attacks/Homoglyph%20Attack/Detection/homoglyph_test_results_part1.csv) <br> [Part2](./Datasets/Attacks/Homoglyph%20Attack/Detection/homogylph_test_results_part2.csv) <br> [Part3](.) <br> [Merged](.) |
 | 3. Evaluate the Accuracy, Precision, Recall and F1-score  of the Detection Algorithm after applying Homoglyph Attack| [Notebook](.) | N/A |
 | 4. Counteract the Homoglyph Attack | [Notebook](./Notebooks/Attacks/Homoglyph%20Attack/homoglyph-attack-and-counteracting-v2.ipynb) | [Dataset](./Datasets/Attacks/Homoglyph%20Attack/normalized_data.csv)|
 
