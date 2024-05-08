@@ -39,8 +39,11 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | 2. Run the Detection Algorithm on the first 100 samples from the [Zero-width Attacked Dataset](./Datasets/Attacks/Zero%20Width%20Attack/Simulate%20Attack/zero-width-attacked-text.csv)| [Part 1](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-1.ipynb) <br> [Part 2](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-2.ipynb) <br> [Part 3](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-3.ipynb) <br> [Merge](./Notebooks/Attacks/Zero%20Width%20Attack/Merge%20Datasets/create-merged-pvalue-scores-zero-width-dataset.ipynb) | [Part 1](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-1.csv) <br> [Part 2](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-2.csv) <br> [Part 3](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-3.csv) <br> [Merged](./Datasets/Attacks/Zero%20Width%20attack/Merge%20Datasets/p-values%20zero-width%20attack.csv) |
 | 3. Evaluate the Accuracy, Precision, Recall and F1-score  of the Detection Algorithm after Zero-Width Attack **without** counteracting | [Notebook](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/evaluate-the-detection-algorithm-zero-width-no-counteracting.ipynb) | N/A |
 
-
-
+### **4. Bidirectional Reordering Attack**
+| Description | Notebooks | Datasets |
+| --- | --- | --- |
+| 1. Simulate Bidirectional Reordering attack on watermarked text | [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-attack.ipynb)| [Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)|
+| 2. Run the Detection Algorithm on the first fews samples from the [Bidirectional Reordering Attack Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)| [Part 1](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/detection-opt-350m-reordering-taher.ipynb)| [Part 1](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/permutation_test_results_bidi.csv)|
 ---
 ## **Evaluating LLM With and Without Watermark**
 ***EXPERIMENTAL***
