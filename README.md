@@ -54,6 +54,6 @@ This repository contains the code for our senior project "Watermarking Machine-G
 |***FAILED & ABANDONED*** Evaluate GEMMA-2B (No Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [MCQ and Auto-Complete FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/gemma-mcq-and-autocomplete-v1-FAIL.ipynb) | N/A |
 |2. Evaluate OPT-350M (With Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [Logits with Red-Green List (Minimum Loss) FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/opt350m-evaluating-a-watermark-for-llm-fail-v1.ipynb)| N/A |
 | 3. Evaluate OPT-350M (Without watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| [MCQ Eval for all categories](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/mmlu-opt-350m-eval-without-watermark-v1.ipynb)| N/A |
-|4. 3. Evaluate OPT-350M (Without watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| N/A | N/A|
+| 4. Evaluate OPT-350M (With watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| N/A | N/A|
 | 5. Evaluate OPT-350M (Without watermark) using the [TruthfulQA Dataset](https://github.com/sylinrl/TruthfulQA)| [Evaluation using ROUGE, BLEU, BLEURT](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/truthfulqa-opt-350m-eval-without-watermark-v1.ipynb)| N/A |
 | 6. Evaluate OPT-350M (With watermark) using the [TruthfulQA Dataset](https://github.com/sylinrl/TruthfulQA)| N/A | N/A |
