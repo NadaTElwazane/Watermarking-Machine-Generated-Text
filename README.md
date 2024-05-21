@@ -64,7 +64,7 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
 | 1. Simulate Unnecessary Whitespace Attack  on watermarked text and Undo it (Disadvantages: Removes all newlines) | [Notebook](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/unnecessary-whitespace-v2.ipynb) | [Dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) |
-| 2. Run detection algorithm on the dataset before and after Removal Algorithm | *In Progress* | N/A |
+| 2. Run detection algorithm on the modified [dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) | [Before](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/detection-opt-350m-add-unnecessary-whitespace.ipynb) <br> *After in progress* | N/A |
 
 ## **Evaluating LLM With and Without Watermark**
 ***EXPERIMENTAL***
