@@ -12,7 +12,7 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | 5. Run the Detection Algorithm on the first 1200 rows of the Truncated Dataset | [Part1](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-1.ipynb) <br> [Part2](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-2.ipynb) <br> [Part3](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/create-pvalue-scores-dataset-part-3.ipynb) <br> [Merge](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Merge%20Datasets/create-merged-pvalue-scores-dataset.ipynb)| [Part1](./Datasets/No%20Attacks/Detection/p-value-label-part-1.csv) <br> [Part2](./Datasets/No%20Attacks/Detection/p-value-label-part-2.csv) <br> [Part3](./Datasets/No%20Attacks/Detection/p-value-label-part-3.csv) <br> [Merged](./Datasets/No%20Attacks/Merged/merged-p-value-label.csv) |
 | 6. Evaluate the Accuracy, Precision, Recall and F1-score  of the Detection Algorithm | [Notebook](./Notebooks/No%20Attacks/Automated%20Watermarking%20and%20Detection/Detection/evaluate-the-detection-algorithm.ipynb) | N/A |
 
-## **Simulating Attacks**
+## **Simulating and Counteracting Attacks**
 ### **1. Paraphrasing Attack**
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
@@ -35,7 +35,7 @@ This repository contains the code for our senior project "Watermarking Machine-G
 ### **3. Zero-Width Attack**
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
-| 1. Simulate Zero-width attack on watermarked text | [Notebook](./Notebooks/Attacks/Zero%20Width%20Attack/Simulate%20Attack/zero-width-attack.ipynb)| [Dataset](./Datasets/Attacks/Zero%20Width%20Attack/Simulate%20Attack/zero-width-attacked-text.csv)|
+| 1. Simulate Zero-width attack on watermarked text | [Notebook](./Notebooks/Attacks/Zero%20Width%20Attack/Simulate%20Attack/zero-width-attack.ipynb)| [Dataset](./Datasets/Attacks/Zero%20Width%20attack/Simulate%20Attack/zero-width-attacked-text.csv)|
 | 2. Run the Detection Algorithm on the first 100 samples from the [Zero-width Attacked Dataset](./Datasets/Attacks/Zero%20Width%20Attack/Simulate%20Attack/zero-width-attacked-text.csv)| [Part 1](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-1.ipynb) <br> [Part 2](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-2.ipynb) <br> [Part 3](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/create-pvalue-scores-dataset-zero-width-part-3.ipynb) <br> [Merge](./Notebooks/Attacks/Zero%20Width%20Attack/Merge%20Datasets/create-merged-pvalue-scores-zero-width-dataset.ipynb) | [Part 1](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-1.csv) <br> [Part 2](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-2.csv) <br> [Part 3](./Datasets/Attacks/Zero%20Width%20attack/Detection/p-value-label-part-3.csv) <br> [Merged](./Datasets/Attacks/Zero%20Width%20attack/Merge%20Datasets/p-values%20zero-width%20attack.csv) |
 | 3. Evaluate the Accuracy, Precision, Recall and F1-score  of the Detection Algorithm after Zero-Width Attack **without** counteracting | [Notebook](./Notebooks/Attacks/Zero%20Width%20Attack/Detection/evaluate-the-detection-algorithm-zero-width-no-counteracting.ipynb) | N/A |
 | 4. Counteract the Zero-Width Attack | [Notebook](./Notebooks/Attacks/Zero%20Width%20Attack/Counteract%20Attack/counteract-zwc-v1-0.ipynb) | [Dataset](./Datasets/Attacks/Zero%20Width%20attack/Counteract%20Attack/recovered_ZW_data.csv) |
@@ -74,6 +74,6 @@ This repository contains the code for our senior project "Watermarking Machine-G
 |***FAILED & ABANDONED*** Evaluate GEMMA-2B (No Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [MCQ and Auto-Complete FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/gemma-mcq-and-autocomplete-v1-FAIL.ipynb) | N/A |
 |2. Evaluate OPT-350M (With Watermark) using the [HellaSwag Dataset](https://www.github.com/rowanz/hellaswag) | [Logits with Red-Green List (Minimum Loss) FAIL](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/opt350m-evaluating-a-watermark-for-llm-fail-v1.ipynb)| N/A |
 | 3. Evaluate OPT-350M (Without watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| [MCQ Eval for all categories](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/mmlu-opt-350m-eval-without-watermark-v1.ipynb)| N/A |
-|4. 3. Evaluate OPT-350M (Without watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| N/A | N/A|
+| 4. Evaluate OPT-350M (With watermark) using the [MMLU Dataset](https://github.com/hendrycks/test)| N/A | N/A|
 | 5. Evaluate OPT-350M (Without watermark) using the [TruthfulQA Dataset](https://github.com/sylinrl/TruthfulQA)| [Evaluation using ROUGE, BLEU, BLEURT](./Notebooks/No%20Attacks/Evaluation/Automated%20Evaluation/truthfulqa-opt-350m-eval-without-watermark-v1.ipynb)| N/A |
 | 6. Evaluate OPT-350M (With watermark) using the [TruthfulQA Dataset](https://github.com/sylinrl/TruthfulQA)| N/A | N/A |
