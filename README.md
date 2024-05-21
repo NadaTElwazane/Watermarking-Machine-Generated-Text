@@ -45,7 +45,27 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | --- | --- | --- |
 | 1. Simulate Bidirectional Reordering attack on watermarked text | [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-attack.ipynb)| [Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)|
 | 2. Run the Detection Algorithm on the first fews samples from the [Bidirectional Reordering Attack Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)| [Part 1](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/detection-opt-350m-reordering-taher.ipynb)| [Part 1](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/permutation_test_results_bidi.csv)|
+| 3. ***FAILED*** Use OCR as a method for reversing Reordering Attack | [Dataset](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-counteract-fail-v1.ipynb)| N/A |
+| 4. Use RTL languages detector to evaluate if Bidi characters are unnecessary| [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-counteract-detect-rtl-v1.ipynb) | [Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_analysis_results.csv)|
 ---
+
+ *Note*: Reordering counteracting using OCR likely failed due to the length of the input, as multiline was not supported. Proposed solution is to detect Right-To-Left (RTL) languages and then evaluate the text for bidi reordering characters. If text is in a Left-To-Right (LTR) language and uses Bidi characters then it's flagged as manipulated.
+
+### **5. Spelling Mistakes Attack (Discrete Alterations)**
+| Description | Notebooks | Datasets |
+| --- | --- | --- |
+| 1. Simulate Spelling Mistakes Attack on watermarked text| [Notebook](./Notebooks/Attacks/Spelling%20Mistakes%20Attack/spelling-mistakes.ipynb) | [Dataset](./Datasets/Attacks/Spelling%20Mistakes%20Attack/mispelled_text.csv)|
+|2. Used a spellcheck pretrained model on the [Mispelled dataset](./Datasets/Attacks/Spelling%20Mistakes%20Attack/mispelled_text.csv) | [Notebook](./Notebooks/Attacks/Spelling%20Mistakes%20Attack/spellcheck-v1.ipynb)|
+|3. Run detection algorithm on the dataset before and after spellcheck | [Before Spellcheck](./Notebooks/Attacks/Spelling%20Mistakes%20Attack/detection-opt-350m-with-spelling-mistakes-v1.ipynb) <br> [After Spellcheck](./Notebooks/Attacks/Spelling%20Mistakes%20Attack/detection-opt-350m-after-spell-check-v1.ipynb) | N/A |
+
+*Note*: Accuracy before spellcheck was 83% and after spellcheck it was significantly reduced to 54%. This can be due to the method we used to introduce spelling mistakes (They simulated typos such as forgetting a letter or swapping any two letters in a word), or some small hallucinations from the language model used for spellcheck.
+
+### **6. Unnecessary Whitespace Attack (Tokenization Attack)**
+| Description | Notebooks | Datasets |
+| --- | --- | --- |
+| 1. Simulate Unnecessary Whitespace Attack  on watermarked text and Undo it (Disadvantages: Removes all newlines) | [Notebook](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/unnecessary-whitespace-v2.ipynb) | [Dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) |
+| 2. Run detection algorithm on the dataset before and after Removal Algorithm | *In Progress* | N/A |
+
 ## **Evaluating LLM With and Without Watermark**
 ***EXPERIMENTAL***
 | Description | Notebooks | Datasets |
