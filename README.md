@@ -45,7 +45,7 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | --- | --- | --- |
 | 1. Simulate Bidirectional Reordering attack on watermarked text | [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-attack.ipynb)| [Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)|
 | 2. Run the Detection Algorithm on the first fews samples from the [Bidirectional Reordering Attack Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_reordered_attacked.csv)| [Part 1](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/detection-opt-350m-reordering-taher.ipynb)| [Part 1](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/permutation_test_results_bidi.csv)|
-| 3. ***FAILED*** Use OCR as a method for reversing Reordering Attack | [Dataset](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-counteract-fail-v1.ipynb)| N/A |
+| 3. ***FAILED*** Use OCR as a method for reversing Reordering Attack | [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-counteract-fail-v1.ipynb)| N/A |
 | 4. Use RTL languages detector to evaluate if Bidi characters are unnecessary| [Notebook](./Notebooks/Attacks/Bidirectional%20Reordering%20Attack/bidi-counteract-detect-rtl-v1.ipynb) | [Dataset](./Datasets/Attacks/Bidirectional%20Reordering%20Attack/bidi_analysis_results.csv)|
 ---
 
@@ -64,7 +64,8 @@ This repository contains the code for our senior project "Watermarking Machine-G
 | Description | Notebooks | Datasets |
 | --- | --- | --- |
 | 1. Simulate Unnecessary Whitespace Attack  on watermarked text and Undo it (Disadvantages: Removes all newlines) | [Notebook](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/unnecessary-whitespace-v2.ipynb) | [Dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) |
-| 2. Run detection algorithm on the modified [dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) | [Before](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/detection-opt-350m-add-unnecessary-whitespace.ipynb) <br> *After in progress* | N/A |
+| 2. Remove unnecessary whitespace from dataset (watermarked and unwatermarked) | [Notebook](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/remove-unnecessary-whitespace.ipynb)| [Dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/merged_data.csv)|
+| 3. Run detection algorithm on the modified [dataset](./Datasets/Attacks/Unnecessary%20Whitespace%20Attack/modified_and_cleaned_text_v2.csv) | [Before](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/detection-opt-350m-add-unnecessary-whitespace.ipynb) <br> [After](./Notebooks/Attacks/Unnecessary%20Whitespace%20Attack/detection-opt-350m-remove-unnecessary-white.ipynb) | N/A |
 
 ## **Evaluating LLM With and Without Watermark**
 ***EXPERIMENTAL***
