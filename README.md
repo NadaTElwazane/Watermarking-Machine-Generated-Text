@@ -1,6 +1,9 @@
 # Watermarking Machine-Generated Text
 This repository contains the code for our senior project "Watermarking Machine-Generated Text".
-<!-- create a table with notebooks and Datasets as header -->
+
+|Final Notebook|
+|---|
+ [Notebook](./Notebooks/generation-and-detection-all-attacks-v1.ipynb)|
 
 ## **No Attacks**
 | Description | Notebooks | Datasets |
